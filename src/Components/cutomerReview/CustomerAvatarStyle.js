@@ -12,7 +12,7 @@ const CustomerAvatarStyle = styled(Box)(({theme}) =>({
         overflowX: 'scroll',
         '-ms-overflow-style': 'none',
         'scrollbar-width': 'none',
-        "-webkit-scrollbar":{
+        "::-webkit-scrollbar":{
             display: 'none'
         },
     },
