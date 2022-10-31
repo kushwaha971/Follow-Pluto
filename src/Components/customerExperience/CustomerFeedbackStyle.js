@@ -7,7 +7,7 @@ const CustomerFeedbackStyle = styled(Box)(({theme}) =>({
     },
     ".helloStyle":{
         fontFamily: 'Dancing Script',
-        fontSize: "20px",
+        fontSize: "25px",
         fontWeight: "700",
         marginLeft: '10px',
         color: '#dd2c00',
@@ -15,7 +15,7 @@ const CustomerFeedbackStyle = styled(Box)(({theme}) =>({
     },
     ".WelcomeStyle":{
         fontFamily: 'Montserrat',
-        fontSize: "15px",
+        fontSize: "18px",
         fontWeight: "700",
         marginLeft: '10px',
         color: '#263238',
