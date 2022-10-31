@@ -1,8 +1,8 @@
-import { Box, IconButton, Link, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography } from "@mui/material";
 import React from "react";
 import SocialStyle from "./SocialStyle";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 function Social() {
@@ -31,7 +31,7 @@ function Social() {
             href="http://www.google.com"
             target="_blank"
           >
-            <FacebookIcon sx={{ fontSize: "30px" }} />
+            <WhatsAppIcon sx={{ fontSize: "30px" }} />
             <Typography
               variant="subtitle2"
               sx={{
@@ -39,12 +39,12 @@ function Social() {
                 fontSize: "15px",
               }}
             >
-              Like
+              Joins Us
             </Typography>
           </Link>
           <Link
             className="mediaStyle"
-            href="https://www.google.com/maps/place/Pluto/@25.2829565,83.0033911,15z/data=!4m5!3m4!1s0x0:0xedf24e0185d47e1c!8m2!3d25.2829565!4d83.0033911?shorturl=1"
+            href="https://chat.whatsapp.com/LiIMt1Y8VneLnKS7PGIUiB"
             target="_blank"
           >
             <LocationOnIcon sx={{ fontSize: "30px" }} />
