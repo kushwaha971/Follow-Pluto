@@ -1,7 +1,11 @@
 import { Box, styled } from "@mui/material";
 
 const CustomerAvatarStyle = styled(Box)(({theme}) =>({
+    width: '24%',
+    margin: '40px',
+    marginLeft: '500px',
     [theme.breakpoints.down("md")]:{
+        width: '82%',
         margin: '40px',
         marginLeft: '22px',
     },
@@ -27,7 +31,7 @@ const CustomerAvatarStyle = styled(Box)(({theme}) =>({
     ".nameStyle":{
         fontFamily: 'Roboto',
         fontWeight: '500',
-        marginLeft: '12px',
+        marginLeft: '12px', 
         color: '#263238',
     },
 

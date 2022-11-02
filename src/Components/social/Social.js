@@ -1,4 +1,4 @@
-import { Box, IconButton, Link, Paper, Typography } from "@mui/material";
+import { Box, Link, Paper, Typography } from "@mui/material";
 import React from "react";
 import SocialStyle from "./SocialStyle";
 import InstagramIcon from "@mui/icons-material/Instagram";
