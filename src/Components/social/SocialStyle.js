@@ -1,6 +1,16 @@
 import { Box, styled } from "@mui/material";
 
 const SocialStyle = styled(Box)(({ theme }) => ({
+  width: '24%',
+  margin: '40px',
+  marginLeft: '500px',
+ 
+
+  [theme.breakpoints.down("md")]:{
+      width: '95%',
+      margin: '40px',
+      marginLeft: '0px',
+  },
   ".socialContainer": {
     [theme.breakpoints.down("md")]: {
       width: "90%",
@@ -13,7 +23,7 @@ const SocialStyle = styled(Box)(({ theme }) => ({
   ".socialPaperStyle": {
     // [theme.breakpoints.down("md")]: {
         backgroundColor: '#ff5722',
-        // height: '12vh',
+       
         borderRadius: '20px',
         display: 'flex',
         justifyContent: 'space-around'
@@ -25,7 +35,7 @@ const SocialStyle = styled(Box)(({ theme }) => ({
         color: 'white',
         textDecoration: 'none'
 
-    },
+    }, 
   
 }));
 
