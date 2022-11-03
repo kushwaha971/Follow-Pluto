@@ -12,7 +12,7 @@ function Social() {
         <Paper elevation={2} className="socialPaperStyle">
           <Link
             className="mediaStyle"
-            href="https://www.instagram.com/pluto_india_food/tagged/"
+            href="https://www.instagram.com/pluto_india_food/"
             target="_blank"
           >
             <InstagramIcon aria-label="Example" sx={{ fontSize: "30px" }} />
