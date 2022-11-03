@@ -1,7 +1,7 @@
 import { Box, Button, Dialog, DialogTitle } from "@mui/material";
 import { Formik, Form, Field } from "formik";
 import React from "react";
-import CustomerDetailsStyle from "./CustomerDetailsStyle";
+
 
 import FormValidation, { validationSchem } from "./FormValidation";
 import Swal from "sweetalert2";
@@ -24,7 +24,7 @@ function CustomerDetails({ open, setOpen, message }) {
   
 
   return (
-    <CustomerDetailsStyle>
+    <React.Fragment>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle
           sx={{
@@ -126,7 +126,7 @@ function CustomerDetails({ open, setOpen, message }) {
           </Formik>
         </Box>
       </Dialog>
-    </CustomerDetailsStyle>
+    </React.Fragment>
   );
 }
 

@@ -23,10 +23,12 @@ const CustomerAvatarStyle = styled(Box)(({theme}) =>({
     ".avatarBorder":{
 
         margin: '5px',
-        padding:'0.5px',
-        border: '3px solid',
-        borderRadius: '25px',
-        backgroundImage: 'radial-gradient(#880e4f, #f50057)',
+        padding:'1px',
+        
+        borderRadius: '50%',
+       border: "2.5px solid rgba(25, 235, 245, 0.1)",
+        background: 'linear-gradient(200deg, rgba(255,0,215,1) -70%, rgba(126,10,162,1) 69%)',
+      
     },
     ".nameStyle":{
         fontFamily: 'Roboto',
