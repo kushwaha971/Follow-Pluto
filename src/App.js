@@ -1,17 +1,22 @@
+import React from 'react';
 import './App.css';
 import AppBar from './Components/appbar/Appbar';
+import Cards from './Components/cards/Cards';
 import CustomerFeedback from './Components/customerExperience/CustomerFeedback';
 import CustomerAvatar from './Components/cutomerReview/CustomerAvatar';
+import Footer from './Components/Footer';
 import Social from './Components/social/Social';
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <AppBar/>
       <CustomerFeedback/>
       <CustomerAvatar/>
       <Social/>
-    </div>
+      <Cards/>
+      <Footer/>
+    </React.Fragment>
   );
 }
 

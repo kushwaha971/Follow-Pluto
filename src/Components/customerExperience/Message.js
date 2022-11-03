@@ -37,10 +37,6 @@ function Message() {
     if(message.length<1){
       Swal.fire({
         icon: 'warning',
-        // title: 'Oops...',
-        // imageUrl: 'https://unsplash.it/400/200',
-        // imageWidth: 400,
-        // imageHeight: 200,
         text: 'Please! Write Something',
       })
 

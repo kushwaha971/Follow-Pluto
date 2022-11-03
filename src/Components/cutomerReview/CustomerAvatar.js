@@ -1,30 +1,30 @@
-import React from 'react'
-import CustomerAvatarStyle from './CustomerAvatarStyle'
-import AvatarList from './AvatarList'
-import { Avatar, Box, Typography } from '@mui/material'
+import React from "react";
+import CustomerAvatarStyle from "./CustomerAvatarStyle";
+import AvatarList from "./AvatarList";
+import { Avatar, Box, Typography } from "@mui/material";
+import { Link } from "react-scroll";
 
 function CustomerAvatar() {
   return (
     <CustomerAvatarStyle>
-    <Box className="avatarContainer">
-    {
-      AvatarList.map(item => {
-        return(
-          <div>
-          <Box id={item.id} className="avatarBorder">
-        <Avatar 
-          src={item.image}
-          sx={{ width: 56, height: 56 }}
-        />
-        </Box>
-        <Typography variant="subtitle" className='nameStyle'>{item.name}</Typography>
-        </div>
-        )
-      })
-    }
-    </Box>
+      <Box className="avatarContainer">
+        {AvatarList.map((item) => {
+          return (
+            <div>
+              <Box id={item.id} className="avatarBorder">
+                <Link to={item.to} spy={true} smooth={true}>
+                  <Avatar src={item.image} sx={{ width: 56, height: 56 }} />
+                </Link>
+              </Box>
+              <Typography variant="subtitle" className="nameStyle">
+                {item.name}
+              </Typography>
+            </div>
+          );
+        })}
+      </Box>
     </CustomerAvatarStyle>
-  )
+  );
 }
 
-export default CustomerAvatar
+export default CustomerAvatar;
