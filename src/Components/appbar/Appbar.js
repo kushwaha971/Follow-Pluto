@@ -15,7 +15,7 @@ function Appbar() {
               sx={{ flexGrow: 1 }}
               className="logoStyle"
             >
-              <img src={logo} className="Logo" alt="" />
+              <img src={logo} className="Logo" alt=""  />
             </Typography>
           </Toolbar>
         </AppBar>

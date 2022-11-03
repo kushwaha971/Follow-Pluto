@@ -16,11 +16,11 @@ const AppbarStyle = styled(Box)(({ theme }) => ({
   },
 
   ".Logo": {
-    height: "45px",
-    width: "180px", 
+    height: "40px",
+    width: "150px", 
     [theme.breakpoints.down("md")]: {
-      height: "25px",
-      width: "100px",
+      height: "40px",
+      width: "120px",
       marginLeft: "-20px",
     },
   },

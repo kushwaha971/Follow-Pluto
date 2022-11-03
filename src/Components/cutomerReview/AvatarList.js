@@ -10,7 +10,7 @@ const AvatarList = [
     id: 1,
     name: "Mark",
     image: avatar1,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt dolore suscipit ea temporibus ducimus consequatur doloremque sequi consectetur nisi.",
+    desc: "I normally don't write reviews for fast food. However this place stands out. It is clean, friendly service, and much better than average food for the price. I tried a Cheese Burger and it was as good as any Cheese Burger in any restaurant! This is a great place!",
     to: 'Mark',
     rating: 4
   },
@@ -18,7 +18,7 @@ const AvatarList = [
     id: 2,
     name: "Lorem",
     image: avatar2,
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nesciunt dolore suscipit ea temporibus ducimus consequatur doloremque sequi consectetur nisi.",
+    desc: "The Maggie and Cold Coffee here is real amazing and would recommend trying these guys out. They have a great toppings selections and great prices on a single bite.",
     to: 'Lorem',
     rating: 5,
   },

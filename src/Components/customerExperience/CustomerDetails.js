@@ -2,7 +2,6 @@ import { Box, Button, Dialog, DialogTitle } from "@mui/material";
 import { Formik, Form, Field } from "formik";
 import React from "react";
 
-
 import FormValidation, { validationSchem } from "./FormValidation";
 import Swal from "sweetalert2";
 
@@ -21,14 +20,12 @@ function CustomerDetails({ open, setOpen, message }) {
     boxSizing: "border-box",
   };
 
-  
-
   return (
     <React.Fragment>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle
           sx={{
-            fontFamily: "Poppins",
+            fontFamily: "Dancing Script",
             fontWeight: "600",
             fontSize: "25px",
             marginBottom: "-25px",
@@ -111,6 +108,10 @@ function CustomerDetails({ open, setOpen, message }) {
                   width: "100%",
                   backgroundColor: "#4CAF50",
                   color: "white",
+                  fontWeight: "600",
+                  fontSize: "20px",
+                  fontFamily: "Dancing Script",
+                  textTransform: "capitalize",
                   padding: "8px 20px",
                   margin: "12px 0",
                   border: "none",
