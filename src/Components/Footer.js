@@ -3,8 +3,8 @@ import React from "react";
 
 const FooterStyle = styled(Box)(({ theme }) => ({
   margin: '15px',
-  marginRight: '150px',
-  [theme.breakpoints.down("md")]:{
+  marginRight: '180px',
+  [theme.breakpoints.down("sm")]:{
     margin: '10px',
     marginRight: '12px',
   },
