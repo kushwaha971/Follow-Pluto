@@ -4,6 +4,7 @@ import astha from "./AvatarImages/astha.jpg";
 import nishit from "./AvatarImages/nishit.jpg";
 import satyam from "./AvatarImages/saksham.jpg";
 import sakshi from "./AvatarImages/sakshi.jpg";
+import ritesh from "./AvatarImages/ritesh.png";
 
 const AvatarList = [
   {
@@ -18,7 +19,7 @@ const AvatarList = [
   {
     id: 2,
     name: "Ritesh",
-    image: nishit,
+    image: ritesh,
     desc: "The Maggie and Cold Coffee here is real amazing and would recommend trying these guys out. They have a great toppings selections and great prices on a single bite.",
     to: 'Ritesh',
     title: 'Ritesh Singh',
@@ -40,12 +41,21 @@ const AvatarList = [
     image: astha,
     desc: "The menus options are an excellent value. The dining experience overall is very pleasant. This is a awesome  place. I highly recommend this restaurant.",
     to: 'Aashta',
-    title: 'Aastha Gautam',
+    title: 'Aastha Varma',
+    rating: 4,
+  },
+  {
+    id: 5,
+    name: "Satyam",
+    image: satyam,
+    desc: "Excellent food. Menu is extensive. Cosy environment. The price is also very reasonable. Highly recommended to all just came across this place and thought to try it out.",
+    to: 'Satyam',
+    title: 'Satyam Singh',
     rating: 4,
   },
 
   {
-    id: 5,
+    id: 6,
     name: "Sakshi",
     image: sakshi,
     desc: "Just came across this place and thought to try it out. It is just amazing and cozy. Perfect place to hangout with friends.The food is simply awesome, we loved...",
@@ -54,7 +64,7 @@ const AvatarList = [
     rating: 5,
   },
   {
-    id: 6,
+    id: 7,
     name: "Nishit",
     image: nishit,
     desc: "This is a place for youngsters to hang out with their friends. You will see many college going students spending their time here. You get burgers, fries, coffee, Maggie, sandwich and many more.",
@@ -62,15 +72,7 @@ const AvatarList = [
     title: 'Nishit Yadav',
     rating: 4,
   },
-  {
-    id: 7,
-    name: "Satyam",
-    image: satyam,
-    desc: "Excellent food. Menu is extensive. Cosy environment. The price is also very reasonable. Highly recommended to all just came across this place and thought to try it out.",
-    to: 'Satyam',
-    title: 'Satyam Singh',
-    rating: 4,
-  },
+  
  
 
 ];
