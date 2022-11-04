@@ -14,7 +14,7 @@ const AvatarList = [
     desc: "I normally don't write reviews for fast food. However this place stands out. It is clean, friendly service, and much better than average food for the price. I tried a Cheese Burger and it was as good as any Cheese Burger in any restaurant. This is a great place!",
     to: 'Kshma',
     title: 'Kshma Singh',
-    rating: 4
+    rating: 5
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const AvatarList = [
     desc: "This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. The meals served rapidly and the rates were reasonable.",
     to: 'Aadhya',
     title: 'Aadhya Mishra',
-    rating: 4
+    rating: 5
   },
   {
     id: 4,
@@ -51,7 +51,7 @@ const AvatarList = [
     desc: "Excellent food. Menu is extensive. Cosy environment. The price is also very reasonable. Highly recommended to all just came across this place and thought to try it out.",
     to: 'Satyam',
     title: 'Satyam Singh',
-    rating: 4,
+    rating: 5,
   },
 
   {
@@ -70,7 +70,7 @@ const AvatarList = [
     desc: "This is a place for youngsters to hang out with their friends. You will see many college going students spending their time here. You get burgers, fries, coffee, Maggie, sandwich and many more.",
     to: 'Nishit',
     title: 'Nishit Yadav',
-    rating: 4,
+    rating: 5,
   },
   
  
