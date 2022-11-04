@@ -7,9 +7,9 @@ const CardStyle = styled(Box)(({ theme }) => ({
     margin: "10px",
     borderRadius: "15px",
     marginLeft: "500px",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       marginLeft: "25px",
-      width: "85%",
+      width: "90%",
     },
   },
   ".cardStyle": {

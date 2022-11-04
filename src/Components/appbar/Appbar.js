@@ -1,9 +1,14 @@
 import * as React from "react";
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import logo from "./../images/PlutoLogo.png";
 import AppBarStyle from "./AppBarStyle";
+import { useNavigate } from "react-router";
 
 function Appbar() {
+  const negivate = useNavigate();
+  const goToMenu = () =>{
+    negivate("/menu")
+  }
   return (
     <AppBarStyle>
       <Box sx={{ flexGrow: 1 }}>
@@ -15,8 +20,16 @@ function Appbar() {
               sx={{ flexGrow: 1 }}
               className="logoStyle"
             >
-              <img src={logo} className="Logo" alt=""  />
+              <img src={logo} className="Logo" alt="" />
             </Typography>
+            <Button
+              variant="contained"
+              color="inherit"
+              className="menuButtonStyle"
+              onClick={goToMenu}
+            >
+              Menu
+            </Button>
           </Toolbar>
         </AppBar>
       </Box>

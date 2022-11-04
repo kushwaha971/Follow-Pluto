@@ -42,7 +42,7 @@ const AvatarList = [
     desc: "The menus options are an excellent value. The dining experience overall is very pleasant. This is a awesome  place. I highly recommend this restaurant.",
     to: 'Aashta',
     title: 'Aastha Varma',
-    rating: 4,
+    rating: 5,
   },
   {
     id: 5,

@@ -1,22 +1,22 @@
 import React from 'react';
 import './App.css';
-import AppBar from './Components/appbar/Appbar';
-import Cards from './Components/cards/Cards';
-import CustomerFeedback from './Components/customerExperience/CustomerFeedback';
-import CustomerAvatar from './Components/cutomerReview/CustomerAvatar';
-import Footer from './Components/Footer';
-import Social from './Components/social/Social';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LandigPage from './Components/LandingPage';
+import Menu from './Components/menu/Menu';
+
 
 function App() {
   return (
-    <React.Fragment>
-      <AppBar/>
-      <CustomerFeedback/>
-      <CustomerAvatar/>
-      <Social/>
-      <Cards/>
-      <Footer/>
-    </React.Fragment>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={ <LandigPage/>} />
+      <Route path="/menu" element={  <Menu/>} />
+    </Routes>
+    </BrowserRouter>
+    
+     
+    
+ 
   );
 }
 

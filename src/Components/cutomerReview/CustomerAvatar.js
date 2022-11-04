@@ -13,7 +13,7 @@ function CustomerAvatar() {
             <div>
               <Box id={item.id} className="avatarBorder">
                 <Link to={item.to} spy={true} smooth={true}>
-                  <Avatar src={item.image} sx={{ width: 56, height: 56 }} />
+                  <Avatar src={item.image} sx={{ width: 50, height: 50 }} />
                 </Link>
               </Box>
               <Typography variant="subtitle" className="nameStyle">
