@@ -54,21 +54,21 @@ function Cards() {
                               color: "#263238",
                             }}
                           >
-                            {item.name}
+                            {item.title}
                           </Typography>
                         }
-                        subheader={
-                          <Typography
-                            sx={{
-                              fontFamily: "Montserrat",
-                              fontSize: "10px",
-                              fontWeight: "700",
-                              color: "#757575",
-                            }}
-                          >
-                            Lorem, ipsum dolor.
-                          </Typography>
-                        }
+                        // subheader={
+                        //   <Typography
+                        //     sx={{
+                        //       fontFamily: "Montserrat",
+                        //       fontSize: "10px",
+                        //       fontWeight: "700",
+                        //       color: "#757575",
+                        //     }}
+                        //   >
+                        //     Lorem, ipsum dolor.
+                        //   </Typography>
+                        // }
                       />
                       <Box className="cardStyle">
                         <CardContent>
