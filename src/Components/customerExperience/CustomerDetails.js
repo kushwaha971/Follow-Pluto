@@ -1,11 +1,34 @@
-import { Box, Button, Dialog, DialogTitle } from "@mui/material";
+import {
+  Box,
+  Button,
+  CircularProgress,
+  Dialog,
+  DialogTitle,
+} from "@mui/material";
 import { Formik, Form, Field } from "formik";
-import React from "react";
-
+import React, { useEffect, useRef, useState } from "react";
 import FormValidation, { validationSchem } from "./FormValidation";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 function CustomerDetails({ open, setOpen, message }) {
+  const [loading, setLoading] = useState(false);
+  const timer = useRef(0);
+  useEffect(() => {
+    return () => {
+      clearTimeout(timer.current);
+    };
+  }, []);
+
+  const handleButtonClick = () => {
+    if (!loading) {
+      setLoading(true);
+      timer.current = window.setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    }
+  };
+
   const handleClose = () => {
     setOpen(false);
   };
@@ -43,17 +66,35 @@ function CustomerDetails({ open, setOpen, message }) {
           <Formik
             validationSchema={validationSchem}
             initialValues={{ name: "", mobile: "", message: message }}
-            onSubmit={(values) => {
-              handleClose();
-              Swal.fire({
-                position: "center",
-                icon: "success",
-                title: "Message sent successfully!",
-                showConfirmButton: false,
-                timer: 2000,
-              });
+            onSubmit={async (payload) => {
+              let name = payload.name;
+              let mobile = payload.mobile;
+              let message = payload.message;
+              let timeStamp = new Date();
+              let date = timeStamp?.getDate();
+              handleButtonClick();
+              const WEBAPP_URL =
+                process.env.NODE_ENV === "development" ||
+                window.location.href?.includes("staging")
+                  ? `https://script.google.com/macros/s/AKfycbwoiTuHtPPM50moZFsFU_UIBUDh7Q5xFxVNW3dP0P2SCCrC90mmxmJyWCGcAWsbaHq3/exec?Name=${name}&Mobile=${mobile}&Message=${message}&Date=${date}`
+                  : `https://script.google.com/macros/s/AKfycbwoiTuHtPPM50moZFsFU_UIBUDh7Q5xFxVNW3dP0P2SCCrC90mmxmJyWCGcAWsbaHq3/exec?Name=${name}&Mobile=${mobile}&Message=${message}&Date=${date}`;
 
-              console.log(values);
+              await axios
+                .post(WEBAPP_URL)
+                .then((res) => {
+                    handleClose();
+                    Swal.fire({
+                      position: "center",
+                      icon: "success",
+                      title: "Message sent successfully!",
+                      showConfirmButton: false,
+                      timer: 3000,
+                    });
+                  console.log("res", res);
+                })
+                .catch((error) => {
+                  console.log("error", error);
+                });
             }}
           >
             <Form>
@@ -101,7 +142,28 @@ function CustomerDetails({ open, setOpen, message }) {
               <FormValidation name="mobile" />
 
               <br />
-              <Button
+              {loading ? (
+                <Button 
+                 variant="contained"
+                sx={{
+                  width: "100%",
+                  backgroundColor: "#ff5722",
+                  fontWeight: "600",
+                  fontSize: "20px",
+                  fontFamily: "Dancing Script",
+                  textTransform: "capitalize",
+                  padding: "8px 20px",
+                  margin: "12px 0",
+                  border: "none",
+                  borderRadius: "4px",
+                  "&:hover": {
+                    backgroundColor: "#4CAF50",
+                  },
+                }}
+                >
+                  <CircularProgress />
+                </Button>
+              ):( <Button
                 type="submit"
                 variant="contained"
                 sx={{
@@ -122,7 +184,8 @@ function CustomerDetails({ open, setOpen, message }) {
                 }}
               >
                 Submit
-              </Button>
+              </Button>)}
+             
             </Form>
           </Formik>
         </Box>

@@ -15,6 +15,7 @@ function LandigPage() {
       <Social />
       <Cards />
       <Footer />
+     
     </React.Fragment>
   );
 }
