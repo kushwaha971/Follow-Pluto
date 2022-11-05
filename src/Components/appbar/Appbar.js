@@ -6,9 +6,9 @@ import { useNavigate } from "react-router";
 
 function Appbar() {
   const negivate = useNavigate();
-  const goToMenu = () =>{
-    negivate("/menu")
-  }
+  const goToMenu = () => {
+    negivate("/menu");
+  };
   return (
     <AppBarStyle>
       <Box sx={{ flexGrow: 1 }}>
