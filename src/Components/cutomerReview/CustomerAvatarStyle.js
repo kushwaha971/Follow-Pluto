@@ -4,7 +4,7 @@ const CustomerAvatarStyle = styled(Box)(({ theme }) => ({
   width: "24%",
   margin: "40px",
   marginLeft: "500px",
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     width: "82%",
     margin: "30px",
     marginLeft: "22px",
