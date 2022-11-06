@@ -5,7 +5,7 @@ const CustomerFeedbackStyle = styled(Box)(({ theme }) => ({
   margin: "20px",
   marginLeft: "500px",
 
-  [theme.breakpoints.down("sm")]: {
+  [theme.breakpoints.down("md")]: {
     textAlign: "auto",
     width: "90%",
     margin: "10px",
