@@ -1,75 +1,74 @@
-import ksmha from "./AvatarImages/kshma.jpg";
+import vartika from "./AvatarImages/vartika.png"
 import aadhya from "./AvatarImages/aadhya.jpg";
-import astha from "./AvatarImages/astha.jpg";
-import nishit from "./AvatarImages/nishit.jpg";
-import satyam from "./AvatarImages/saksham.jpg";
+import vivek from "./AvatarImages/vivek.png";
+import shivam from "./AvatarImages/shivam.png"
 import sakshi from "./AvatarImages/sakshi.jpg";
-import ritesh from "./AvatarImages/ritesh.png";
+import pooja from "./AvatarImages/pooja.png";
+import suraj from "./AvatarImages/suraj.png";
 
 const AvatarList = [
   {
     id: 1,
-    name: "Kshma",
-    image: ksmha,
-    desc: "I normally don't write reviews for fast food. However this place stands out. It is clean, friendly service, and much better than average food for the price. I tried a Cheese Burger and it was as good as any Cheese Burger in any restaurant. This is a great place!",
-    to: "Kshma",
-    title: "Kshma Singh",
+    name: "Avi",
+    image: aadhya,
+    desc: "It was a lovely experience  visiting this place with a such a beautiful ambience.  A place where you get quality food enjoying sitting. A place where you can enjoy with your friends  and loved ones. The staff provides very good service.  One must explore this restaurant at Lanka 😍😍 maggi is much delicious then other place.🤗😋😋",
+    to: "Avi",
+    title: "Avi Tiwari",
     rating: 5,
   },
   {
     id: 2,
-    name: "Ritesh",
-    image: ritesh,
-    desc: "The Maggie and Cold Coffee here is real amazing and would recommend trying these guys out. They have a great toppings selections and great prices on a single bite.",
-    to: "Ritesh",
-    title: "Ritesh Singh",
+    name: "Suraj",
+    image: suraj,
+    desc: "The Maggie and Cold Coffee here is real amazing and would recommend trying these guys out. They have a great toppings selections and great prices on a single bite.I highly recommend this restaurant.",
+    to: "Suraj",
+    title: "Suraj Kushwaha",
     rating: 5,
   },
 
   {
     id: 3,
-    name: "Aadhya",
-    image: aadhya,
-    desc: "This spot gives extraordinary service and yummy meals. One of my favourite restaurants around town. The meals served rapidly and the rates were reasonable.",
-    to: "Aadhya",
-    title: "Aadhya Mishra",
+    name: "Vartika",
+    image: vartika,
+    desc: "I think this place is pretty cool with best quality and taste in food in the cheapest price at it's best tbh I loved it❤️ And also the staffs were so genuine and kind people    So try this place out guys",
+    title: "Vartika Agrahari",
     rating: 5,
   },
   {
     id: 4,
-    name: "Aastha",
-    image: astha,
-    desc: "The menus options are an excellent value. The dining experience overall is very pleasant. This is a awesome  place. I highly recommend this restaurant.",
-    to: "Aashta",
-    title: "Aastha Varma",
+    name: "Shivam",
+    image: shivam,
+    desc: "Delicious food with below average price...guys visit once if you want to enjoy a good test in budget. And surely you guyss are going to surprise by there pricing and combo offer..😎😎",
+    to: "Shivam",
+    title: "Shivam Baranwal",
     rating: 5,
   },
   {
     id: 5,
-    name: "Satyam",
-    image: satyam,
-    desc: "Excellent food. Menu is extensive. Cosy environment. The price is also very reasonable. Highly recommended to all just came across this place and thought to try it out.",
+    name: "Kriti",
+    image: sakshi,
+    desc: "If you are someone who is searching😃 for Amazimg place.. good vibes ambience.. with a comfy budget nd delicious food taste😋..must visit with friends for hangout nd chill🤪...i really enjoyed a lot..😀 Thank you pluto for making my day  awesome with my friend...😊",
     to: "Satyam",
-    title: "Satyam Singh",
+    title: "Kriti Pandey",
     rating: 5,
   },
 
   {
     id: 6,
-    name: "Sakshi",
-    image: sakshi,
-    desc: "Just came across this place and thought to try it out. It is just amazing and cozy. Perfect place to hangout with friends.The food is simply awesome, we loved...",
-    to: "Sakshi",
-    title: "Sakshi Shrivastava",
+    name: "Vivek",
+    image: vivek,
+    desc: "It is a great place to hang out for students. Good quality food that is not heavy on your pocket. The staff is very friendly. Very chill and comfortable atmosphere.",
+    to: "Vivek",
+    title: "Vivek Shirke",
     rating: 5,
   },
   {
     id: 7,
-    name: "Nishit",
-    image: nishit,
-    desc: "This is a place for youngsters to hang out with their friends. You will see many college going students spending their time here. You get burgers, fries, coffee, Maggie, sandwich and many more.",
+    name: "Pooja",
+    image: pooja,
+    desc: "Love the vibe here ...💕 Great place to chill and eat 😋 Tried veg burger which was amazing 😍 Do try the matka tea from this place ❣️❣️❣️",
     to: "Nishit",
-    title: "Nishit Yadav",
+    title: "Pooja Kushwaha",
     rating: 5,
   
   },
