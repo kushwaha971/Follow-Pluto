@@ -5,6 +5,7 @@ import shivam from "./AvatarImages/shivam.png"
 import sakshi from "./AvatarImages/sakshi.jpg";
 import pooja from "./AvatarImages/pooja.png";
 import suraj from "./AvatarImages/suraj.png";
+import rudra from "./AvatarImages/rudra.jpg";
 
 const AvatarList = [
   {
@@ -32,6 +33,7 @@ const AvatarList = [
     image: vartika,
     desc: "I think this place is pretty cool with best quality and taste in food in the cheapest price at it's best tbh I loved it❤️ And also the staffs were so genuine and kind people    So try this place out guys",
     title: "Vartika Agrahari",
+    to: "vartika",
     rating: 5,
   },
   {
@@ -69,6 +71,16 @@ const AvatarList = [
     desc: "Love the vibe here ...💕 Great place to chill and eat 😋 Tried veg burger which was amazing 😍 Do try the matka tea from this place ❣️❣️❣️",
     to: "Nishit",
     title: "Pooja Kushwaha",
+    rating: 5,
+  
+  },
+  {
+    id: 8,
+    name: "Rudra",
+    image: rudra,
+    desc: "I normally don't write reviews for fast food. However this place stands out. It is clean, friendly service, and much better than average food for the price. I tried a Cheese Burger and it was as good as any Cheese Burger in any restaurant. This is a great place!",
+    to: "Rudra",
+    title: "Rudra Maurya",
     rating: 5,
   
   },
